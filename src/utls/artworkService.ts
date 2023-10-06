@@ -7,6 +7,7 @@ export async function fetchArtworks() {
       throw new Error('Network response was not ok');
     }
     const data = await response.json();
+    console.log(data);
     return data.data;
   } catch (error) {
     throw new Error('Error fetching artworks');

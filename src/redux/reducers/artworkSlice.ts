@@ -2,6 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 interface Artwork {
 id: number;
 title: string;
+image_id: string;
 // Add other artwork properties here
 }
 interface ArtworksState {
