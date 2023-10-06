@@ -14,8 +14,8 @@ export const NavbarOrganism = () => {
     setMenuOpen(false);
   };
   return (
-    <nav className="navbar w-full flex  flex-shrink flex-row justify-around z-[100] sticky top-0 right-0 left-0  h-14 ">
-      <div className="w-11/12  flex lg:pt-2 flex-row items-center justify-between">
+    <nav className="navbar w-full flex bg-translucent-white  py-3  flex-shrink flex-row justify-around z-[100] sticky top-0 right-0 left-0  min-h-14 ">
+      <div className="w-11/12  flex pb-1  lg:pt-2 flex-row items-center justify-between">
         <div className=" w-auto ">
           <Link className="font-bold" to="/ " aria-label="home">
             <div>

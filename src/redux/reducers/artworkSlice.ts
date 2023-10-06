@@ -3,6 +3,18 @@ interface Artwork {
 id: number;
 title: string;
 image_id: string;
+artist_title:string;
+artwork_type_title: string;
+department_title: string;
+description: string;
+date_display: string;
+dimensions: string;
+medium_display: string;
+exhibition_history: string;
+classification_titles: string[];
+category_titles: string[];
+copyright_notice: string;
+credit_line: string;
 // Add other artwork properties here
 }
 interface ArtworksState {

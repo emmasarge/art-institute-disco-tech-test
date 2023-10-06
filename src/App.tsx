@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./index.css";
 import ScrollToTop from "./utls/ScrollToTop";
 import { Layout } from "./pages/Layout";
-import { DetailPage } from "./pages/DetailPage";
 import { NoPage } from "./pages/NoPage";
 import HomePage from "./pages/HomePage";
+import DetailPage from "./pages/DetailPage";
 
 
 export default function App() {

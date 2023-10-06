@@ -108,3 +108,18 @@ code {
   width: 1.2em;
   cursor: pointer;
 }
+
+.sticky {
+  position: sticky;
+  position: -webkit-sticky;
+
+}
+
+.shadow {
+  box-shadow: 0 0 10px 1px rgba(124, 123, 123, 0.1);
+  
+}
+
+.bg-translucent-white {
+  background-color: rgba(255, 255, 255, 0.5);
+}

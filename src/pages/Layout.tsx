@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { NavbarOrganism } from "../components/organisms/navbar/navbar";
-import { FooterOrganism } from "../components/organisms/footer/footer";
+import { NavbarOrganism } from "../components/organisms/navbar/NavbarOrganism";
+import { FooterOrganism } from "../components/organisms/footer/FooterOrganism";
 
 
 export const Layout = () => {
