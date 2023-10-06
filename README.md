@@ -1,4 +1,23 @@
-# Getting Started with Create React App
+
+# Emma Sargeant | TECH TEST FOR DISCO
+
+### Live and deployed site
+
+You can see the final project [here.](https://disco-emma-sargeant.netlify.app/artwork/23700)
+
+## What I used:
+
+This site was created with React, Typescript, Redux and Tailwind.css to create a gallery-style project.
+
+The project is also using React Router for navigating pages.
+
+
+
+---
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
