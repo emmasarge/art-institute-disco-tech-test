@@ -29,7 +29,7 @@ export const ArtCardMolecule = ({ art, onClickNext }: ArtCardMoleculeProps) => {
       onClick={() => onClickNext(art.id)}
     >
       <div
-        className="w-[60%] h-36  lg:h-[18em] bg-cover rounded-tl-[4px] rounded-bl-[4px]  bg-center flex  relative justify-start px-3 lg:px-10 items-center"
+        className="w-[60%] h-36  lg:h-[20em] bg-cover rounded-tl-[4px] rounded-bl-[4px]  bg-center flex  relative justify-start px-3 lg:px-10 items-center"
         style={{
           backgroundImage: `url('https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg')`,
         }}
