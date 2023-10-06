@@ -123,8 +123,8 @@ export const SingleArtworkDisplayMolecule = ({
                   className="flex flex-row items-center cursor-pointer transition-all ease-in-out duration-300 hover:duration-300 hover:scale-105"
                   onClick={onClickBack}
                 >
-                  <div>
-                    <BackArrow className="h-[1em] lg:h-[0.75em]" />
+                  <div className="w-fit">
+                    <BackArrow className=" max-w-[3em] h-[1em] lg:h-[0.75em]" />
                   </div>
                   <div className="ml-2 text-[1.75em] lg:text-[1.35em] tracking-wide  pb-[0.175em] leading-[1em]">
                     <p>go back. </p>
