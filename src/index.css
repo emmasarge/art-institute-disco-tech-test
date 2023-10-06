@@ -1,3 +1,8 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,96 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* NAVBAR STYLING */
+
+.navbar-menu {
+
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+  transform: translateX(100%);
+
+}
+
+.navbar-menu.nav_active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  box-shadow: 2px 1px 12px 1px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin-right: -10px;
+  padding-right: 20px;
+  padding-left: 10px;
+  padding-top: 30px;
+  border-radius: 4px;
+  top: 0;
+  color: #221C07;
+  max-width: 350px;
+  background-color: #fafafa;
+  opacity: 1;
+  animation: slideIn 0.3s ease forwards, fadeIn 0.3s ease forwards;
+}
+
+.navbar-menu.nav_closing {
+  max-width: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-width 0.3s ease, opacity 0.3s ease;
+  animation: slideOut 0.3s ease forwards, fadeOut 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.svg_icon {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  fill: #221C07;
+}
+
+.close_button {
+  height: 1.45em;
+  width: 1.2em;
+  cursor: pointer;
 }
