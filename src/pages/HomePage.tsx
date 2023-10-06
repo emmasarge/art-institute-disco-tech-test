@@ -46,7 +46,7 @@ function HomePage() {
   return (
     <div className="w-full flex pb-36 h-min-screen overflow-y-scroll mx-auto max-w-[1500px] ">
       <div className="w-11/12 flex flex-col justify-center items-center mx-auto">
-        <div className="h-[40vh] lg:h-[60vh] w-full display flex flex-col items-start justify-center">
+        <div className="h-[50vh] lg:h-[60vh] w-full display flex flex-col items-start justify-center">
           <h1 className="text-[2.75em] leading-[1.12em] tracking-wide">
             The Art Institute of Chicago.
           </h1>

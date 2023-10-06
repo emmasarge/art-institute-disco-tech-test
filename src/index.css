@@ -123,3 +123,12 @@ code {
 .bg-translucent-white {
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.ellipse {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; 
+}
