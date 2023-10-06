@@ -30,21 +30,40 @@ export const ArtCardMolecule = ({ art, onClickNext }: ArtCardMoleculeProps) => {
     >
       <div
         className="w-[60%] h-36  lg:h-[20em] bg-cover rounded-tl-[4px] rounded-bl-[4px]  bg-center flex  relative justify-start px-3 lg:px-10 items-center"
-        style={{
-          backgroundImage: `url('https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg')`,
-        }}
+        style={
+          art.image_id === null
+            ? {
+                backgroundColor: "#EAB305",
+              }
+            : {
+                backgroundImage: `url('https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg')`,
+              }
+        }
       >
-        <div className="absolute  rounded-tl-[4px]  rounded-bl-[4px] inset-0 bg-black opacity-50"></div>
-<div className="z-30 ">
-        <h1  className="text-white ellipse z-40 uppercase leading-[1.125em] text-[1.4em] lg:text-[3em] tracking-wide font-bold">
-          {art.title}
-        </h1></div>
+        {art.image_id !== null && (
+          <div className="absolute  rounded-tl-[4px]  rounded-bl-[4px] inset-0 bg-black opacity-50"></div>
+        )}
+        <div className="z-30 ">
+          <h1
+            className={
+              art.image_id !== null
+                ? "text-white ellipse z-40 uppercase leading-[1.125em] text-[1.4em] lg:text-[3em] tracking-wide font-bold"
+                : "text-black ellipse z-40 uppercase leading-[1.125em] text-[1.4em] lg:text-[3em] tracking-wide font-bold"
+            }
+          >
+            {art.title}
+          </h1>
+        </div>
       </div>
       <div className="flex flex-col justify-between w-[35%]  py-2 pl-[0.5em]">
         <div className="w-[95%] lg:w-10/12 lg:mx-auto ml-[0.35em] lg:pt-2 flex-wrap flex flex-col justify-center">
           <div className="w-full flex flex-col pt-1  ">
             <h2 className="leading-[1em] w-full text-[1.125em] lg:text-[2em] font-medium">
-              {art.artist_title === null ? "Unknown" : <div> {art.artist_title}</div>}
+              {art.artist_title === null ? (
+                "Unknown"
+              ) : (
+                <div> {art.artist_title}</div>
+              )}
             </h2>
 
             <p className="leading-[1.12em] mt-[0.175em] lg:mt-[0.3em] lg:text-[1.5em] font-light l">

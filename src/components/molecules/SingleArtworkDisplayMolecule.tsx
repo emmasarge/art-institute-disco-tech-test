@@ -39,15 +39,18 @@ export const SingleArtworkDisplayMolecule = ({
       <div className="flex flex-col lg:flex-row w-full justify-between">
         <div className="flex flex-col w-full lg:w-1/2 lg:h-max lg:min-h-screen lg:sticky lg:top-[4.6rem]">
           <div className="w-full h-full ">
+            {art.image_id !== null ? (
             <img
               className="w-full lg:max-h-[80vh] mx-auto"
               src={`https://www.artic.edu/iiif/2/${art.image_id}/full/843,/0/default.jpg`}
               alt={art.title}
-            />
-          </div>
+            />):(< div className="w-full lg:max-h-[80vh] flex justify-center items-center mx-auto bg-yellow-500 h-[30vh] lg:h-[80vh]">
+                <div><p className="text-[1.5em] tracking-wide">Image not available.</p></div>
+            </div>)
+                      }          </div>
         </div>
         <div className="w-full lg:w-1/2 flex flex-col pt-4 lg:pt-0 justify-start items-start pb-32  ">
-          <div className="w-ful lg:w-10/12 mt-4 lg:mt-0  mx-auto max-w-[800px] ">
+          <div className="w-full lg:w-10/12 mt-4 lg:mt-0  mx-auto max-w-[800px] ">
             <h1 className="text-[2.5em] leading-[1em] font-medium">
               {art.title}
             </h1>
